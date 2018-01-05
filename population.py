@@ -46,7 +46,7 @@ df = pd.DataFrame(data)
     
 df.pos.apply(plot_area)"""
 
-m.readshapefile('/home/tejaswi/Desktop/Map/Admin2', 'areas')
+m.readshapefile('/home/tejaswi/Desktop/Map/states', 'areas')
 
 #print(m.areas)
 
