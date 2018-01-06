@@ -1,4 +1,4 @@
-import numpy as np 
+import math
 
 print ("enter no of rows")
 n = input()
@@ -12,8 +12,14 @@ print ("enter your range")
 l = input()
 l = int(l)
 
-arr = np.random.randint(l, size = (m,n))
-print (arr)
+arr = []
+
+for i in range(n):
+	arr.append([])
+	for j in range(m):
+		arr[i].append((math.pow(10,i+1)-math.pow(9,j+1))%((i+1)*(j+1)))
+
+print(arr)
 
 print("----------------")
 print("----------------")
