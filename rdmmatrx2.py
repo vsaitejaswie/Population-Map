@@ -17,8 +17,8 @@ arr = []
 for i in range(n):
 	arr.append([])
 	for j in range(m):
-		arr[i].append((math.pow(10,i+1)-math.pow(9,j+1))%((i+1)*(j+1)))
-
+		arr[i].append(math.pow(9,j+1)%(((i+1)+(j+1)))*(5*(7+i+j)))
+		
 print(arr)
 
 print("----------------")
