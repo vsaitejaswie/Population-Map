@@ -45,7 +45,7 @@ def cmp(x,y):
 		return 1
 
 def compp():
-	for i in range(a):
+	for i in range(min(a,b)):
 		c = cmp(A[i],B[i])
 		if c == 0:
 			flag = 0
@@ -62,7 +62,7 @@ def compp():
 		print("Not a match")
 
 if a!=b:
-	print("Not a match")
-	exit()
+	print("A and B will be compared till  " + str(min(a,b)))
+	compp()
 else:
 	compp()
