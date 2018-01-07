@@ -45,18 +45,24 @@ def cmp(x,y):
 		return 1
 
 def compp():
-	for i in range(min(a,b)):
+	for i in range(a):
 		c = cmp(A[i],B[i])
 		if c == 0:
+			flag = 0
 			continue
 		else:
-			for j in range(3):
+			flag = 1
+			break
+			"""for j in range(3):
 				if A[i][j] != B[i][j]:
-					print("check at " + str(j+1) + " in tuple " + str(i+1))
-	print("Done!")
+					print("check at " + str(j+1) + " in tuple " + str(i+1))"""
+	if flag == 0:
+		print("Match")
+	else:
+		print("Not a match")
 
 if a!=b:
-	print("A and B will be compared till  " + str(min(a,b)))
-	compp()
+	print("Not a match")
+	exit()
 else:
 	compp()
