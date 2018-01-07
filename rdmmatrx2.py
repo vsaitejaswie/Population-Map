@@ -8,16 +8,17 @@ print ("enter no of columns")
 m = input()
 m = int(m)
 
-print ("enter your range")
+print ("enter range")
 l = input()
-l = int(l)
+l = int(m)
 
 arr = []
 
 for i in range(n):
 	arr.append([])
 	for j in range(m):
-		arr[i].append(math.pow(9,j+1)%(((i+1)+(j+1)))*(5*(7+i+j)))
+		#arr[i].append(math.pow(9,j+1)%(((i+1)+(j+1)))*(5*(7+i+j)))
+		arr[i].append((math.pow((j*i)/(j+i+1-(j/i+1)+1),9))%l)
 		
 print(arr)
 
